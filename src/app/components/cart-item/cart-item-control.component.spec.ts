@@ -41,9 +41,7 @@ describe('CartItemControlComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should be created', () => {
-    // giving this error: this.cart.getItem is not a function
-    // however this is a function and it is implemented in cartService, and I dint have enought time to figure out what is happening.
+  it('should be created', () => {    
     expect(component).toBeTruthy();
   });
 

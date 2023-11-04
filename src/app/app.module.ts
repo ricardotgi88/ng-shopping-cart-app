@@ -11,8 +11,8 @@ import { ProductsDataService } from './services/products-data.service';
 import { ProductsService } from './services/products.service';
 import { CartDataService } from './services/cart-data.service';
 import { CartService } from './services/cart.service';
-import { ComponentsModule } from './core/core.module';
-import { CoreModule } from './components/components.module';
+import { CoreModule } from './core/core.module';
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
   declarations: [

@@ -46,6 +46,7 @@ It may look scary at first but carry on!
 ### 4. CSS Theming
 - The application is using the bootstrap classes, however they are not being applied.
     * Configure the application to use the bootstrap CSS.
+- There is a prototipe in the root of the project. The application should be styled as in the image, using boostrap classes or css created by you.
 
 ### 5. [BONUS] Unit tests
 - The application has some unit tests to help you checkout if everything is working correctly. There are also unit tests which are broken

@@ -44,7 +44,7 @@ export class ProductsListComponent implements OnInit, AfterContentInit, AfterVie
     }
 
     getTemplate(product: Product): TemplateRef<any> {
-        let template: TemplateRef<any>
+        let template: TemplateRef<any>;
 
         if (product.type) {
             template = this.templates[product.type];

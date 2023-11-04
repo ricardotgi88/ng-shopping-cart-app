@@ -8,4 +8,4 @@ import { ForProductDirective } from "./directives/for-product.directive";
   imports: [BrowserModule],
   exports: [ForProductDirective],
 })
-export class ComponentsModule {}
+export class CoreModule {}
