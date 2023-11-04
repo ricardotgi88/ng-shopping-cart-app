@@ -1,12 +1,12 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CartWidgetComponent } from './cart-widget.component';
+import { CartComponent } from './cart.component';
 import { CartService } from '../../services/cart.service';
 import { Subject } from 'rxjs';
 
-describe('CartWidgetComponent', () => {
-  let component: CartWidgetComponent;
-  let fixture: ComponentFixture<CartWidgetComponent>;
+describe('CartComponent', () => {
+  let component: CartComponent;
+  let fixture: ComponentFixture<CartComponent>;
   let ServiceMock: CartService;
 
   beforeEach(async(() => {
@@ -17,7 +17,7 @@ describe('CartWidgetComponent', () => {
     });
 
     TestBed.configureTestingModule({
-      declarations: [ CartWidgetComponent ],
+      declarations: [ CartComponent ],
       providers: [
         { provide: CartService, useValue: ServiceMock },
       ]
@@ -26,7 +26,7 @@ describe('CartWidgetComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CartWidgetComponent);
+    fixture = TestBed.createComponent(CartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

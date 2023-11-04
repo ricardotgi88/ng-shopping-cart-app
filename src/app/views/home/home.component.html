@@ -1,8 +1,12 @@
-<div class="row">
-  <div class="col">
+<div class="">
+  <div>
+    <product-form></product-form>
+  </div>
+  <div class="">
     <products-list [products]="products$ | async">
       <ng-container *forProduct="let product; ofType: 'default'">
-        <div class="product-image"></div>
+        <div class="product-image">
+        </div>
         <h4>{{ product.name }} (custom default)</h4>
         <cart-item-control [product]="product"></cart-item-control>
       </ng-container>
@@ -21,12 +25,12 @@
     </products-list>
   </div>
   <hr />
-  <div class="col-3">
+  <div class="">
     <div class="card">
       <div class="card-body">
         <h4 class="card-title">In Cart</h4>
       </div>
-      <cart-widget></cart-widget>
+      <cart></cart>
     </div>
   </div>
 </div>

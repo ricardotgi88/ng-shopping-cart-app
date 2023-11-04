@@ -7,6 +7,7 @@ import { Component, OnInit } from "@angular/core";
 import { ForProductDirective } from "../../core/directives/for-product.directive";
 
 import { By } from "@angular/platform-browser";
+import { ComponentsModule } from "../components.module";
 
 @Component({
   template: `

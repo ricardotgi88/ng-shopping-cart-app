@@ -17,11 +17,11 @@ interface ApiCartItem {
 export class InMemoryBackendService implements InMemoryDbService {
     createDb() {
         const products: ApiProduct[] = [
-            { id: 1, name: 'iPhone', price: 500, type: 'promo' },
-            { id: 2, name: 'PlayStation', price: 250, type: 'outlet' },
-            { id: 3, name: '8K OLED TV', price: 300 },
-            { id: 4, name: '4K Ultrabook', price: 600 },
-            { id: 5, name: 'iPad PRO', price: 600 },
+            { id: 1, name: 'iPhone', price: 500, type: 'default' },
+            { id: 2, name: 'PlayStation', price: 250, type: 'default' },
+            { id: 3, name: '8K OLED TV', price: 300, type: 'default' },
+            { id: 4, name: '4K Ultrabook', price: 600, type: 'default' },
+            { id: 5, name: 'iPad PRO', price: 600, type: 'default' },
         ];
         const cart: ApiCartItem[] = [
             { id: 1, product: products[0], amount: 1, subtotal: products[0].price },

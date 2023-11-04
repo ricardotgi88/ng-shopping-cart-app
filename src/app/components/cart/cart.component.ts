@@ -3,12 +3,12 @@ import { Observable } from 'rxjs';
 import { CartService } from '../../services/cart.service';
 
 @Component({
-    selector: 'cart-widget',
-    templateUrl: 'cart-widget.component.html',
-    styleUrls: ['cart-widget.component.css'],
+    selector: 'cart',
+    templateUrl: 'cart.component.html',
+    styleUrls: ['cart.component.css'],
     changeDetection: ChangeDetectionStrategy.Default
 })
-export class CartWidgetComponent {
+export class CartComponent {
     items$: Observable<any[]>;
     total$: Observable<number>;
 
