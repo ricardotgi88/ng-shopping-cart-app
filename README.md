@@ -1,8 +1,8 @@
 # Angular Task
 
-The app called Shopping cart app.
+The app called Aubays Shopping cart app.
 We provide a few components to build a simple shop with a cart system.
-The main goal is to fix a few issues across comonents and implement add and remove products to you cart.
+The main goal is to fix a few issues across components and implement add and remove products to you cart, as well as the layout.
  
 
 ---
@@ -13,10 +13,14 @@ This is a TDD (test driven development) task.
 Your task is to fix a few issues across the app and to add few features and pass the tests. 
 It may look scary at first but carry on!
 
-### 1. Products List Component
-- Some products do not have a proper template rendering to fix it, consider the following:
-    * Make sure the 'default' template is used if the product type has no template provided.
-    * If a custom 'default' template is provided, make sure it overrides the 'default' template of the component. 
+### 1. Layout
+- Follow this [Figma link](https://www.figma.com/file/QGFswDNwqstQuFSk7DabB8/Vendas?type=design&node-id=328%3A384&mode=design&t=khgWgICOcAdal1Og-1) to create the same layout in the app.
+- It must be
+    * Responsive to mobile
+    * The Cart items will appear as a dropdown when clicked in navbar on top right
+    * There is this feature "sort items by" on the page's top right. The available options are: Price and Name.
+- The application is using the bootstrap classes, however they are not being applied.
+    * Configure the application to use the bootstrap CSS.
 
 ### 2. Cart Service
 - At first, the view only updates when the user interacts with it, to fix this consider the following:
@@ -43,10 +47,14 @@ It may look scary at first but carry on!
 - Sorting and filtering products leave dangling subscriptions in cart control component.
 - Make sure components unsubscribe when they get destroyed. (You can also use async pipe)
 
-### 4. CSS Theming
-- The application is using the bootstrap classes, however they are not being applied.
-    * Configure the application to use the bootstrap CSS.
-- There is a prototipe in the root of the project. The application should be styled as in the image, using boostrap classes or css created by you.
+### 4. Add new product
+- We provide a wide range of 8 products to our shopping list. So you need to help us by creating the add nw products feature.
+- Consider the following rules for your form
+   * All fields are required
+   * Product name must be up to 30 characters or lower
+   * Price must accept only numbers. (NO currency format is required ;))
+   * Reset button will take the form to pristine state
+   * On Save you must add the product in the list, and clean the form
 
 ### 5. [BONUS] Unit tests
 - The application has some unit tests to help you checkout if everything is working correctly. There are also unit tests which are broken

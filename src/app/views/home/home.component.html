@@ -8,6 +8,7 @@
         <div class="product-image">
         </div>
         <h4>{{ product.name }} (custom default)</h4>
+        <img [attr.src]="product.imgUrl" alt="product Img" width="100">
         <cart-item-control [product]="product"></cart-item-control>
       </ng-container>
 
