@@ -22,7 +22,7 @@ It may look scary at first but carry on!
 - The application is using the bootstrap classes, however they are not being applied.
     * Configure the application to use the bootstrap CSS.
 
-### 2. Cart Service
+### 2. Cart Service.
 - At first, the view only updates when the user interacts with it, to fix this consider the following:
     * Make sure cartState is emiting updates upon subscribing.
     * There are some items already added in the cart. Make sure to display them when open the page
